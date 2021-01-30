@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+setting.py
+.setting.py
+/setting.py
+/tests
+tests/
