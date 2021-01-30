@@ -1,0 +1,656 @@
+@font-face {
+    font-family: 'Intro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/Intro.otf');
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/Roboto-BoldCondensed.ttf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/Roboto-Regular.ttf');
+    font-weight: normal;
+}
+
+#redactor > .template-item{
+    background-color: grey;
+}
+body{
+    margin: 0;
+    background-color: grey !important;
+}
+body, div, span, img {
+    box-sizing: border-box;
+}
+div.rauan-page{
+    height:297mm;
+    width:210mm;
+    padding: 10mm;
+    background: white;
+    position: relative;
+}
+
+.rauan-page-header{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+
+.rauan-logo {
+    max-height:19.13mm;
+    width: auto;
+    height: auto;
+}
+.rauan-contact-icon{
+    max-height:4.6mm;
+    width: auto;
+    height: auto;
+    vertical-align: text-bottom;
+    padding-bottom: 0.5mm;
+}
+
+.rauan-contacts{
+    font-family: 'Roboto', sans-serif;
+    font-size: 4.4mm;
+    text-align: right;
+}
+.rauan-contact-item + .rauan-contact-item {
+    margin-top:3.47mm;
+}
+.rauan-page-content{
+    margin-top: 10mm;
+    display: flex;
+    align-items: end;
+}
+.rauan-left-col{
+    order:1;
+    width: 50.8mm;
+    border:1mm solid #000000;
+    font-family: 'Intro';
+}
+.rauan-right-col{
+    margin-right: 10mm;
+    flex: 1;
+}
+.rauan-left-col-img{
+    width: 7.36mm;
+    height: 7.36mm;
+}
+.rauan-left-col-title{
+    display: flex;
+    align-items: center;
+    margin-top: 1.77mm;
+    margin-bottom: 1.77mm;
+    margin-left: 1.77mm;
+    font-size: 3.5mm;
+}
+.rauan-left-col-title .rauan-sp{
+    margin-left:2.2mm;
+}
+.rauan-left-col-item{
+    margin-bottom: 1mm;
+    padding-left: 6.12mm;
+    text-align: left;
+}
+.rauan-left-col-item-name{
+    font-size:3.18mm;
+    color: #45a2da;
+}
+.rauan-left-col-item-value{
+    font-size:3.18mm;
+    color: #000000;
+
+}
+.rauan-right-title{
+    font-family: 'Intro';
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 7.11mm;
+
+}
+.rauan-right-title-value{
+    font-size: 8.5mm;
+    line-height: 0.75;
+    margin-left: -0.8mm;
+}
+.rauan-right-title-date{
+    font-size: 3.3mm;
+}
+.rauan-right-brief-info{
+    border:1mm solid #000000;
+    font-family: 'Intro';
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding-top:2.43mm;
+    padding-bottom:2.43mm;
+    margin-bottom: 7.11mm;
+    position: relative;
+}
+.rauan-blue{
+    color:#45a2da;
+}
+.rauan-brief-item{
+    width: 33%;
+    font-size: 4.06mm;
+    line-height: 1.1;
+}
+.rauan-hash{
+    font-family: 'Arial';
+    font-weight: 900;
+}
+.rauan-client-name{
+    font-size:3.2mm;
+}
+.rauan-client-phone{
+    font-size:2.54mm;
+    display: block;
+}
+.rauan-approximate-price {
+    margin-top: 2em;
+    position: relative;
+    font-size:5mm;
+    font-weight: bold;
+    font-family: 'Intro';
+    text-align: center;
+    padding: 2mm;
+}
+.rauan-approximate-price .price {
+    color: #45a2da;
+}
+.rauan-approximate-price .top-angle{
+    width: 4mm;
+    height: 4mm;
+    top:0;
+    left:0;
+    position: absolute;
+    border-top:1mm solid #000;
+    border-left:1mm solid #000;
+
+}
+.rauan-approximate-price .top-angle2{
+    width: 4mm;
+    height: 4mm;
+    top:0;
+    right:0;
+    position: absolute;
+    border-top:1mm solid #000;
+    border-right:1mm solid #000;
+
+}
+.rauan-approximate-price .bottom-angle{
+    width: 4mm;
+    height: 4mm;
+    bottom:0;
+    right:0;
+    position: absolute;
+    border-bottom:1mm solid #000;
+    border-right:1mm solid #000;
+}
+.rauan-approximate-price .bottom-angle2{
+    width: 4mm;
+    height: 4mm;
+    bottom:0;
+    left:0;
+    position: absolute;
+    border-bottom:1mm solid #000;
+    border-left:1mm solid #000;
+}
+.rauan-brief-content-divider{
+    border-left: 0.5mm solid black;
+    border-right: 0.5mm solid black;
+}
+.rauan-condition-title{
+    font-size: 3.53mm;
+    font-family: 'Intro';
+}
+.rauan-repair-condition {
+    margin:4mm 0;
+}
+.rauan-repair-condition  > ul {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+    padding-left: 4mm;
+}
+.rauan-repair-condition  > ul > li{
+    list-style: decimal;
+    font-size: 2.73mm;
+    font-family: 'Intro';
+
+}
+.rauan-repair-condition ul li .rauan-sp{
+    font-size:3mm;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+.rauan-repair-condition ul > li > ul > li{
+    list-style: none;
+}
+.rauan-product-service-title{
+    font-size: 3.53mm;
+    font-family: 'Intro';
+    margin-bottom: 3.39mm;
+
+}
+.rauan-product-service-content{
+    border: 0.5mm #000000 dashed;
+    padding: 3.38mm
+}
+.rauan-product-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rauan-product-name{
+    font-family: 'Roboto';
+    font-size: 3.18mm;
+    width: 77%;
+}
+.rauan-product-price{
+    font-size: 3.73mm;
+    font-weight: 900;
+    font-family: 'Roboto';
+}
+.rauan-product-total{
+    text-align: right;
+    padding-right: 3.88mm;
+}
+.rauan-product-total-value{
+    font-size: 3.73mm;
+    font-weight: 900;
+    font-family: 'Roboto';
+}
+.rauan-product-total {
+    margin-top:3.21mm;
+    font-family: 'Intro';
+    font-size: 3.73mm;
+}
+.rauan-product-total-sp{
+    display: inline;
+}
+.rauan-sp{
+    display: inline;
+}
+.rauan-ribbon{
+    padding: 0.5mm 7mm;
+    position: absolute;
+    top: 1.75mm;
+    right: -8.5mm;
+    transform: rotate(45deg);
+    font-family: 'Intro';
+    font-size: 2.18mm;
+    color: #fff;
+    background-color: #45a2da;
+    -webkit-print-color-adjust: exact;
+}
+.rauan-brief-item-time{
+    position: relative;
+}
+.rauan-time-krug{
+    position: absolute;
+    top: calc(50% + 5mm);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+.rauan-intro-copy{
+    font-family: 'Arial';
+    font-weight: 900;
+}
+.rauan-product-service-data{
+    display: none;
+}
+.rauan-page-footer{
+    font-family: 'Intro';
+    display: flex;
+    font-size: 4.06mm;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+
+}
+.rauan-red{
+    color: #ce3935;
+}
+.rauan-page-sign{
+    font-family: 'Intro';
+    font-size: 3.53mm;
+    bottom:50mm;
+    right:30mm;
+    text-align: center;
+    margin-bottom: 7.11mm;
+}
+.rauan-approximate-pay{
+    font-size: 3mm;
+}
+hr.style12 {
+    height: 6px;
+    background: url(img/upload/54f904fe2215322.png) repeat-x 0 0;
+    border: 0;
+}
+.rauan-our-part .rauan-page-content{
+    margin-top:2mm;
+
+}
+
+.rauan-our-part .rauan-right-title {
+    margin-bottom: 2mm;
+}
+
+.rauan-our-part .rauan-left-col {
+    border:none;
+}
+
+.rauan-our-part .rauan-left-col-item{
+    padding:0;
+
+}
+.rauan-our-part .rauan-left-col-item-name{
+    font-size: 2mm;
+}
+
+.rauan-our-part .rauan-left-col-item-value {
+    font-size:2mm;
+}
+
+.rauan-our-part .rauan-approximate-price {
+    font-size:3mm;
+    text-align: left;
+    padding: 0;
+}
+.rauan-our-part .rauan-right-brief-info{
+    margin-bottom: 1mm;
+}
+.rauan-our-part .rauan-repair-condition {
+    margin: 1mm 0;
+}
+.rauan-our-part .rauan-repair-condition  > ul > li {
+    font-size:2mm;
+    line-height:2mm;
+}
+.rauan-our-part .rauan-repair-condition  > ul > li > ul > li {
+    font-size:2mm;
+    line-height:2mm;
+}
+.rauan-our-part .rauan-repair-condition ul li .rauan-sp {
+    font-size:2mm;
+
+}
+.rauan-our-part .rauan-page-sign {
+    display: flex;
+    justify-content: space-between;
+}
+.rauan-our-part .rauan-page-sign div {
+    width:45%;
+    text-align: left;
+    font-size:3mm;
+    font-weight: 300;
+    font-family: 'Roboto';
+
+}
+.rauan-our-part .rauan-page-sign div:last-of-type{
+    text-align: right;
+}
+
+/*part for checklist*/
+.rauanc-page {
+    padding: 0 !important;
+}
+.rauanc-header {
+    font-family: 'Intro';
+    display: flex;
+    justify-content: space-between;
+}
+.rauanc-header .title {
+    font-size:8mm;
+    padding: 5mm;
+}
+
+.rauanc-header .after-before-container{
+    display: flex;
+    font-size: 4mm;
+}
+.rauanc-header .after-before-container .before {
+    padding-top: 5.3mm;
+    padding-right: 4mm;
+}
+
+.rauanc-header .after-before-container .after {
+    width: 25mm;
+    text-align: center;
+    border-left: 1mm solid #000;
+    padding-top: 5.3mm;
+}
+.rauanc-precontent {
+    display: flex;
+    border-top:1mm solid #000;
+    justify-content: space-between;
+}
+
+.rauanc-precontent .title {
+    padding-left: 5mm;
+    display: flex;
+    font-family: 'Intro';
+    font-size: 19mm;
+    align-items: center;
+}
+.rauanc-precontent .number {
+    color: #45a2da;
+    margin-left: 11px;
+}
+.rauanc-precontent .number .rauan-hash {
+    display: inline-block;
+}
+
+.rauan-rotate {
+    margin-top: 13.8mm;
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+
+    /* IE */
+    -ms-transform: rotate(-90deg);
+
+    /* Opera */
+    -o-transform: rotate(-90deg);
+
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+
+.rauanc-precontent .theads{
+    display: flex;
+    font-family: 'Intro';
+    font-size: 3mm;
+}
+.rauanc-precontent .theads > div {
+    margin-top: -1px;
+    width: 12mm;
+    border-right: 1mm solid #000;
+    position: relative;
+    height: 25mm;
+
+}
+.rauanc-precontent .theads > div::first-letter{
+    color: #ce3935;
+}
+.rauanc-precontent .theads > div:last-of-type{
+    border-right: none;
+}
+
+.rauanc-page .rauan-hash {
+    font-family: 'Roboto';
+    font-weight: 900;
+}
+
+.rauanc-content .rauanc-content-item{
+    font-family: 'Roboto';
+    display: flex;
+    border-bottom: 0.5mm dashed rgba(105, 105, 105, 0.51);
+}
+.rauanc-content .rauanc-content-item:last-of-type{
+    border-bottom: 1mm solid #000;
+}
+.rauanc-red {
+    color: #ce3935;
+    display: inline-block;
+}
+
+.rauanc-content .rauanc-content-item .number
+{
+    width:7mm;
+    text-align: center;
+    font-weight: bold;
+    padding: 2.3mm 0 0 0;
+    font-size: 16px;
+
+}
+.rauanc-content .rauanc-content-item .text {
+    flex:1;
+    padding: 2.3mm 0 0 0;
+    font-size: 16px;
+
+}
+.rauanc-content .rauanc-content-item .checkboxes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rauanc-content .rauanc-content-item .checkboxes .rauanc-boxes {
+    width: 4.5mm;
+    height: 4.5mm;
+    border: 0.5mm solid #000;
+    margin: 0 auto;
+
+}
+
+.rauanc-content .rauanc-content-item .checkboxes .rauanc-boxes.non{
+    border-color: transparent;
+}
+
+
+.rauanc-content .rauanc-content-item .checkboxes > div {
+    width: 12mm;
+    border-right:1mm solid #000;
+    padding: 2.2mm 0;
+}
+
+.rauanc-content .rauanc-content-item .checkboxes > div:last-of-type{
+    border-right:none;
+}
+
+.rauanc-postcontent {
+    font-family: 'Intro';
+    padding: 5mm;
+}
+
+.rauanc-postcontent .repair-group .title {
+    color: #ce3935;
+    font-size:4mm;
+    margin-bottom: 2mm;
+}
+
+.rauanc-postcontent .repair-group .item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rauanc-postcontent .repair-group .item .author {
+    font-size:4mm;
+}
+.rauanc-postcontent .repair-group .item .answers{
+    display: flex;
+}
+
+.rauanc-postcontent .repair-group .item .answer {
+    display: flex;
+    align-items: center;
+}
+
+.rauanc-postcontent .repair-group .item .answer .rauanc-boxes {
+    width: 4.5mm;
+    height: 4.5mm;
+    border: 0.5mm solid #000;
+}
+
+.rauanc-postcontent .repair-group .item .answer .text {
+    margin-left: 1mm;
+    margin-right: 1mm;
+    font-family: 'Roboto';
+    font-size:3mm;
+    font-weight: bold;
+}
+
+.rauanc-footer {
+    position: absolute;
+    bottom: 0;
+    padding: 5mm;
+    font-family: Roboto;
+}
+
+.rauanc-footer .legend {
+    display: flex;
+    align-items: center;
+}
+
+.rauanc-footer .legend img {
+    width: 4.5mm;
+    height: 4.5mm;
+    margin-right: 1mm;
+}
+
+.rauanc-footer .legend .text {
+    margin-right: 2mm;
+    font-size: 3mm;
+}
+.rauanc-footer .maintext {
+    font-size: 3mm;
+    max-width: 130mm;
+    margin-top: 4mm;
+}
+
+.rauanc-footer .signs {
+    font-family: 'Intro';
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+
+}
+.rauanc-footer .signs > div {
+    width: 30%;
+
+    /*justify-content: flex-end;*/
+}
+.rauanc-footer .add-info {
+    font-family: 'Roboto';
+    font-size: 3mm;
+    margin-bottom: 2mm;
+}
+
+
+
+
+/* Madiyar custom */
+
+.rauan-our-part.client-part {
+  margin-top: 4em;
+  border-top: 2px dashed black;
+  padding-top: 2em;
+}
+
+.client-part_round__img {
+  position: absolute;
+  width: 115px;
+  top: 20px;
+  left: 20px;
+}

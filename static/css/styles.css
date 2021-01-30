@@ -1,0 +1,296 @@
+@font-face {
+    font-family: 'Intro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/Intro.otf');
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-BoldCondensed.ttf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf');
+    font-weight: normal;
+}
+
+#redactor > .template-item{
+    background-color: grey;
+}
+body{
+    margin: 0;
+    background-color: grey !important;
+}
+body, div, span, img {
+    box-sizing: border-box;
+}
+div.rauan-page{
+    height:227mm;
+    width:210mm;
+    padding: 10mm;
+    background: white;
+    position: relative;
+}
+
+.rauan-page-header{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+
+.rauan-logo {
+    max-height:19.13mm;
+    width: auto;
+    height: auto;
+}
+.rauan-contact-icon{
+    max-height:4.6mm;
+    width: auto;
+    height: auto;
+    vertical-align: text-bottom;
+    padding-bottom: 0.5mm;
+}
+
+.rauan-contacts{
+    font-family: 'Roboto', sans-serif;
+    font-size: 4.4mm;
+    text-align: right;
+}
+.rauan-contact-item + .rauan-contact-item {
+    margin-top:3.47mm;
+}
+.rauan-page-content{
+    margin-top: 10mm;
+    display: flex;
+    align-items: end;
+}
+.rauan-left-col{
+    width: 50.8mm;
+    border:1mm solid #000000;
+    margin-right: 10mm;
+    font-family: 'Intro';
+}
+.rauan-right-col{
+    flex: 1;
+}
+.rauan-left-col-img{
+    width: 7.36mm;
+    height: 7.36mm;
+}
+.rauan-left-col-title{
+    display: flex;
+    align-items: center;
+    margin-top:6.77mm;
+    margin-bottom:6.77mm;
+    margin-left: 4.91mm;
+    font-size: 3.5mm;
+}
+.rauan-left-col-title .rauan-sp{
+    margin-left:2.2mm;
+}
+.rauan-left-col-item{
+    margin-bottom: 5.08mm;
+    padding-right: 6.12mm;
+    text-align: right;
+}
+.rauan-left-col-item-name{
+    font-size:3.18mm;
+    color: #45a2da;
+    margin-bottom: 1.62mm;
+}
+.rauan-left-col-item-value{
+    font-size:3.18mm;
+    color: #000000;
+
+}
+.rauan-right-title{
+    font-family: 'Intro';
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 7.11mm;
+
+}
+.rauan-right-title-value{
+    font-size: 9.5mm;
+    line-height: 0.75;
+    margin-left: -0.8mm;
+}
+.rauan-right-title-date{
+    font-size: 2.3mm;
+}
+.rauan-right-brief-info{
+    border:1mm solid #000000;
+    font-family: 'Intro';
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding-top:2.43mm;
+    padding-bottom:2.43mm;
+    margin-bottom: 7.11mm;
+    position: relative;
+}
+.rauan-blue{
+    color:#45a2da;
+}
+.rauan-brief-item{
+    width: 33%;
+    font-size: 4.06mm;
+    line-height: 1.1;
+}
+.rauan-hash{
+    font-family: 'Arial';
+    font-weight: 900;
+}
+.rauan-client-name{
+    font-size:3.2mm;
+}
+.rauan-client-phone{
+    font-size:2.54mm;
+    display: block;
+}
+.rauan-warranty-title{
+    font-size: 2.68mm;
+    position: relative;
+    z-index: 2;
+}
+.rauan-brief-content-divider{
+    border-left: 0.5mm solid black;
+    border-right: 0.5mm solid black;
+}
+.rauan-condition-title{
+    font-size: 3.53mm;
+    font-family: 'Intro';
+    margin-bottom: 3.39mm;
+}
+.rauan-repair-condition {
+    margin-bottom:7.11mm;
+}
+.rauan-repair-condition  > ul {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+    padding-left: 4mm;
+}
+.rauan-repair-condition  > ul > li{
+    list-style: decimal;
+    font-size: 3.73mm;
+    font-family: 'Intro';
+
+}
+.rauan-repair-condition ul li .rauan-sp{
+    font-size:2.54mm;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+.rauan-repair-condition ul > li > ul > li{
+    list-style: none;
+}
+.rauan-product-service-title{
+    font-size: 3.53mm;
+    font-family: 'Intro';
+    margin-bottom: 3.39mm;
+
+}
+.rauan-product-service-content{
+    border: 0.5mm #000000 dashed;
+    padding: 3.38mm
+}
+.rauan-product-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rauan-product-name{
+    font-family: 'Roboto';
+    font-size: 3.18mm;
+    width: 77%;
+}
+.rauan-product-price{
+    font-size: 3.73mm;
+    font-weight: 900;
+    font-family: 'Roboto';
+}
+.rauan-product-total{
+    text-align: right;
+    padding-right: 3.88mm;
+}
+.rauan-product-total-value{
+    font-size: 3.73mm;
+    font-weight: 900;
+    font-family: 'Roboto';
+}
+.rauan-product-total {
+    margin-top:3.21mm;
+    font-family: 'Intro';
+    font-size: 3.73mm;
+}
+.rauan-product-total-sp{
+    display: inline;
+}
+.rauan-sp{
+    display: inline;
+}
+.rauan-ribbon{
+    padding: 0.5mm 7mm;
+    position: absolute;
+    top: 1.75mm;
+    right: -8.5mm;
+    transform: rotate(45deg);
+    font-family: 'Intro';
+    font-size: 2.18mm;
+    color: #fff;
+    background-color: #45a2da;
+    -webkit-print-color-adjust: exact;
+}
+.rauan-brief-item-time{
+    position: relative;
+}
+.rauan-time-krug{
+    position: absolute;
+    top: calc(50% + 3mm);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+.rauan-intro-copy{
+    font-family: 'Arial';
+    font-weight: 900;
+}
+.rauan-product-service-data{
+    display: none;
+}
+.rauan-page-footer{
+    font-family: 'Intro';
+    display: flex;
+    font-size:4.06mm;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    display: block;
+    left: 0;
+    padding: 10mm
+
+}
+.rauan-red{
+    color: #ce3935;
+}
+.rauan-page-sign{
+    font-family: 'Intro';
+    font-size: 5.08mm;
+    position: absolute;
+    bottom:50mm;
+    right:30mm;
+}
+
+.seal {
+/*    position: absolute;
+    width: 130px;
+    height: 130px;
+    left: 620px;
+    top: 710px;
+    display: block;*/
+    display: none
+}
