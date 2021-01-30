@@ -9,6 +9,7 @@ import app_logger
 from setting import REDIRECT_URL
 from telegram import send_telegram_bot
 
+
 """ Подключаем логгер """
 logger = app_logger.get_logger(__name__)
 app = Flask(__name__, static_folder='static/')
